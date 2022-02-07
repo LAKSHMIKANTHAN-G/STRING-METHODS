@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Ultra&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Ultra&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<title> STRING METHODS </title>
+<style>
+body
+{
+background-color:#FFBF00;
+}
+h1
+{
+text-align:center;
+border:1px solid #22F3F0;
+background-color:#00FAEE ;
+padding:20px;
+}
+*
+{
+font-size:20px;
+
+font-family: 'Audiowide', cursive
+}
+
+textarea
+{
+font-family: 'Ultra', serif;
+background-color:#ECF0F1 ;
+border:3px solid red;
+font-size:35px;
+}
+</style>
+</head>
+<body>
+<h1> STRING-METHODS </h1>
+
+<textarea rows="10" cols="200"id="demo" disabled>
+</textarea>
+<button onclick="myFunction1()">length</button>
+<!--LENGTH-->
+<script>
+  //METHOD 1: 
+function myFunction1() {
+	let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	
+	document.getElementById("demo").innerHTML = text.length;
+	
+}
+</script>
+
+<!--SLICE-->
+
+<button onclick="myFunction2()">slice</button>
+<script> 
+    function myFunction2() {
+	let str = "Apple, Banana, Kiwi";
+	document.getElementById("demo").innerHTML = str.slice(7,13); 
+}
+</script> 
+
+<!--SUBSTRING-->
+
+
+<button onclick="myFunction3()">substring</button>
+<script>
+function myFunction3() {
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.substring(7,13);
+} 
+</script>
+
+<!-- REPLACE-->
+<button onclick="myFunction4()"> REPLACE </button>
+
+<script>
+function myFunction4() {
+let text = "Please visit Microsoft!"
+document.getElementById("demo").innerHTML =text.replace("Microsoft","W3Schools");
+}
+</script>
+
+<!-- CAPITALIZE-->
+<button onclick="myFunction5()"> CAPITALIZE </button>
+<script>
+function myFunction5() {
+  let text = "hello world !"
+  document.getElementById("demo").innerHTML =
+  text.toUpperCase();
+}
+</script>
+
+
+<!--CONCADINATE-->
+
+
+<button onclick="myFunction6()"> CONCADINATE </button>
+<script>
+function myFunction6() {
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat(" ",text2);
+document.getElementById("demo").innerHTML = text3;
+}
+</script>
+
+
+
+
+
+
+
+
+<!--PADDING-->
+
+
+<button onclick="myFunction7()"> PADDING </button>
+
+<script>        
+function myFunction7() {
+let text = "5";
+document.getElementById("demo").innerHTML = text.padStart(4,0);
+}
+</script>
+
+
+<!-- index of --->
+<button onclick="myFunction8()"> indexof </button>
+<script>
+function myFunction8() {
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate");
+}
+</script>
+
+
+
+
+
+<!--last indexof-->
+
+<button onclick="myFunction9()"> lastindexof </button>
+<script>
+function myFunction9() {
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.lastIndexOf("locate");
+}
+</script>
+
+</body>
+</html>
